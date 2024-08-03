@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""island_perimeter interview""""
+"""
+island_perimeter interview
+find perimeter of island in body of water
+""""
 
 def island_perimeter(grid):
     """

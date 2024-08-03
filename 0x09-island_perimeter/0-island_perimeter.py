@@ -7,6 +7,11 @@ find perimeter of island in body of water
 def island_perimeter(grid):
     """
     Calculate and return the perimeter of the island described in grid.
+    Args:
+        grid (list): 2D list of integers representing the grid
+    
+    Returns:
+        int: Perimeter of the island
     """
     if not grid:
         return 0

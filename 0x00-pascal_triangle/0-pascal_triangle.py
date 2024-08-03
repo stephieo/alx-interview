@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+""" Pascal's Triangle 
+"""
+
+def pascal_triangle(n):
 """
     Create a Pascal's Triangle .
 
@@ -10,9 +14,6 @@
         Each inner list is a row in theTriangle.
         Empty list if n <= 0 or not an integer.
     """
-
-
-def pascal_triangle(n):
     if not isinstance(n, int) or n <= 0:
         return []
 

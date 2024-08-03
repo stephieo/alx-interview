@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-island_perimeter interview
+module for island_perimeter interview
 find perimeter of island in body of water
 """"
 

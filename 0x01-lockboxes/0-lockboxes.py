@@ -27,13 +27,3 @@ def canUnlockAll(boxes):
                     stackbox.append(key)
 
     return len(openedBoxes) == n
-
-# Example usage:
-boxes = [[1], [2], [3], [4], []]
-print(canUnlockAll(boxes))  # True
-
-boxes = [[1, 2], [0, 3], [1, 4], [2], [3]]
-print(canUnlockAll(boxes))  # True
-
-boxes = [[1, 2, 3], [3, 0, 1], [2], [0]]
-print(canUnlockAll(boxes))  # False

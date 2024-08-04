@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""The N queens puzzle 
+"""The N queens puzzle
 """
-
 import sys
+
 
 def is_valid_position(pos, occupied_pos):
     """Check if a position is valid for placing a queen"""
@@ -14,6 +14,7 @@ def is_valid_position(pos, occupied_pos):
         ):
             return False
     return True
+
 
 def place_queens(n, index, occupied_pos, solutions):
     """Place queens on the board and collect valid positsions"""
@@ -27,10 +28,12 @@ def place_queens(n, index, occupied_pos, solutions):
             place_queens(n, index + 1, occupied_pos, solutions)
             occupied_pos.pop()
 
+
 def solve_nqueens(n):
     solutions = []
     place_queens(n, 0, [], solutions)
     return solutions
+
 
 def init():
     """Initialize and validate input"""
@@ -47,12 +50,14 @@ def init():
         sys.exit(1)
     return n
 
+
 def n_queens():
     """Main function to solve and print the N queens solutions"""
     n = init()
     solutions = solve_nqueens(n)
     for solution in solutions:
         print([[i, solution[i]] for i in range(len(solution))])
+
 
 if __name__ == '__main__':
     n_queens()

@@ -20,7 +20,7 @@ const findMovie = (id) => {
           return;
         }
         const characterData = JSON.parse(body);
-        return characterData.name;  // Bug: The name is not printed
+        console.log(characterData.name);
       });
     }
   });

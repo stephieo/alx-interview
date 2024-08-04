@@ -14,8 +14,10 @@ def validUTF8(data):
                 bytes_to_process = 2
             elif byte >> 3 == 0b11110:
                 bytes_to_process = 3
-            elif byte >> 7:
-                return False
+            elif (byte >> 7) == 0:
+                continue 
+            else:
+                return False 
         else:
             if byte >> 6 != 0b10:
                 return False

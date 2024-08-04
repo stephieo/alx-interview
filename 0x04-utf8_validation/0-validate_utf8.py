@@ -2,6 +2,7 @@
 """This module contains the solution to the utf validation problem
 """
 
+
 def validUTF8(data):
     """ Determine if data set represents a valid UTF-8 encoding  """
     bytes_to_process = 0
@@ -15,9 +16,9 @@ def validUTF8(data):
             elif byte >> 3 == 0b11110:
                 bytes_to_process = 3
             elif (byte >> 7) == 0:
-                continue 
+                continue
             else:
-                return False 
+                return False
         else:
             if byte >> 6 != 0b10:
                 return False
